@@ -6624,3 +6624,49 @@ body {
 
 
 
+
+.whatsapp {
+  position: fixed;
+  bottom: 160px;
+  left: 1%;
+  z-index: 1;
+  background: #25d366;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+ 
+}
+.whatsapp a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.call {
+  position: fixed;
+  bottom: 220px;
+  left: 1%;
+  z-index: 1;
+  background: #2585d3;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+}
+.call a {
+  text-decoration: none;
+  color: #fff; 
+}
+.location {
+  position: fixed;
+  bottom: 100px;
+  left: 1%;
+  z-index: 1;
+  background: #d62828;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  
+}
+.location a {
+  text-decoration: none;
+  color: #fff;
+}
