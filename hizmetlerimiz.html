@@ -14,14 +14,33 @@
     <link rel="stylesheet" href="assets/css/uikit.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16704259270">
-</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16704259270"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'AW-16704259270');
+</script>
+
+
+<!-- Event snippet for SİNAN 1 conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16704259270/AIreCMuTjIsaEMaJm50-',
+      'value': 1.0,
+      'currency': 'TRY',
+      'event_callback': callback
+  });
+  return false;
+}
 </script>
   </head>
 
@@ -32,7 +51,7 @@
         aria-hidden="true"></i>Konum Gönder</a>
   </div>
   <div class="call">
-    <a href="tel:0536 676 28 66"><i class="fa fa-phone" aria-hidden="true"></i> <span>Tıkla Ara</span> 
+<a onclick="return gtag_report_conversion('tel:05366762866');" href="tel:05366762866"><i class="fa fa-phone" aria-hidden="true"></i> <span>Tıkla Ara</span> 
     </a>
   </div>
 
@@ -263,7 +282,7 @@
                     </nav>
                   </div>
                   <div class="page-header__callback block-with-icon">
-                    <a class="block-with-icon__link" href="tel:05366762866">
+                    <a class="block-with-icon__link" onclick="return gtag_report_conversion('tel:05366762866');" href="tel:05366762866">
                       <div class="block-with-icon__icon">
                         <img src="assets/img/ico-callback.svg" alt="ico-callback" />
                       </div>
@@ -567,7 +586,7 @@
                     </p>
                     <img src="assets/img/decor-line-right-accent.svg" alt="" />
                     <div class="block-with-icon">
-                      <a class="block-with-icon__link" href="tel:05366762866">
+                      <a class="block-with-icon__link" onclick="return gtag_report_conversion('tel:05366762866');" href="tel:05366762866">
                         <div class="block-with-icon__icon">
                           <img src="assets/img/ico-comment.svg" alt="ico-comment" />
                         </div>
@@ -623,7 +642,7 @@
                             Destek Hattımız
                           </div>
                           <div class="contacts-list-item__content">
-                            <a href="tel:05366762866"
+                            <a onclick="return gtag_report_conversion('tel:05366762866');" href="tel:05366762866"
                               >0536 676 28 66</a
                             >
                           </div>
@@ -893,7 +912,7 @@
                   </ul>
                   <hr class="uk-margin" />
                   <div class="block-with-icon">
-                    <a class="block-with-icon__link" href="tel:05366762866">
+                    <a class="block-with-icon__link" onclick="return gtag_report_conversion('tel:05366762866');" href="tel:05366762866">
                       <div class="block-with-icon__icon">
                         <img src="assets/img/ico-callback.svg" alt="ico-callback" />
                       </div>
